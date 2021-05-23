@@ -18,6 +18,7 @@ public class TopicoModel {
     private String identificadorTopico;
     private String titulo;
     private String mensagem;
+    private String categoria;
     private LocalDateTime dataCriacao;
     private SituacaoTopico status;
     private AlunoModel autor;
@@ -25,6 +26,7 @@ public class TopicoModel {
     private List<RespostaModel> respostas;
 
     @DynamoDbAttribute("id_topico")
+    @DynamoDbSecondaryPartitionKey(indexNames = "TopicosPorCategoriaIndex")
     @DynamoDbPartitionKey
     public String getIdentificadorTopico() {
         return identificadorTopico;
@@ -39,6 +41,10 @@ public class TopicoModel {
     public String getMensagem() {
         return mensagem;
     }
+
+    @DynamoDbAttribute("categoria")
+    @DynamoDbSecondarySortKey(indexNames = "TopicosPorCategoriaIndex")
+    public String getCategoria() { return categoria; }
 
     @DynamoDbAttribute("data_criacao")
     public LocalDateTime getDataCriacao() {

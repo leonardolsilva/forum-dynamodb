@@ -11,6 +11,9 @@
   "data_criacao": {
     "S": "2021-05-16"
   },
+  "categoria": {
+    "S": "Banco de dados"
+  },
   "situacao": {
     "S": "NAO_RESPONDIDO"
   },
@@ -39,7 +42,7 @@
         "S": "DynamoDB - Banco de dados NoSQL serverless da AWS"
       },
       "categoria": {
-        "S": "Banco de dados NoSQL"
+        "S": "NoSQL"
       }
     }
   },

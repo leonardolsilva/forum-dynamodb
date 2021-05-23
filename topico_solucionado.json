@@ -8,6 +8,9 @@
   "mensagem": {
     "S": "Estou com algumas dúvidas relacionadas aos tipos de dados que DynamoDB consegue trabalhar. Onde posso conseguir essa informação?"
   },
+  "categoria": {
+    "S": "Banco de dados"
+  },
   "data_criacao": {
     "S": "2018-05-20T10:47:33"
   },
@@ -39,7 +42,7 @@
         "S": "DynamoDB - Banco de dados NoSQL serverless da AWS"
       },
       "categoria": {
-        "S": "Banco de dados NoSQL"
+        "S": "NoSQL"
       }
     }
   },

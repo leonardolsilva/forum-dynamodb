@@ -16,6 +16,7 @@ public class Topico {
     private final String identificadorTopico;
     private final String titulo;
     private final String mensagem;
+    private final String categoria;
     private final LocalDateTime dataCriacao;
     private final SituacaoTopico status;
     private final Aluno autor;

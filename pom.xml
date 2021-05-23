@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.lelecoder</groupId>
-	<artifactId>template-dynamo-db</artifactId>
+	<artifactId>forum-dynamodb</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>template-dynamo-db</name>
+	<name>forum-dynamodb</name>
 	<description>Demo project for Spring Boot</description>
 
 	<dependencyManagement>

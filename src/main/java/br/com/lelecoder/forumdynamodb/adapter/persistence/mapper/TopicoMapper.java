@@ -19,6 +19,7 @@ public class TopicoMapper {
                         model.getIdentificadorTopico(),
                         model.getTitulo(),
                         model.getMensagem(),
+                        model.getCategoria(),
                         model.getDataCriacao(),
                         model.getStatus(),
                         mapperAluno.paraDominio(model.getAutor()),
@@ -33,6 +34,7 @@ public class TopicoMapper {
                 .identificadorTopico(topico.getIdentificadorTopico())
                 .titulo(topico.getTitulo())
                 .mensagem(topico.getMensagem())
+                .categoria(topico.getCategoria())
                 .dataCriacao(topico.getDataCriacao())
                 .status(topico.getStatus())
                 .autor(mapperAluno.paraModel(topico.getAutor()))
