@@ -1,0 +1,49 @@
+{
+  "id_topico": {
+    "S": "35d764e8-499a-4999-85be-bebe8697f98c"
+  },
+  "titulo": {
+    "S": "Aprendizado DynamoDB"
+  },
+  "mensagem": {
+    "S": "Estou aprendendo sobre o DynamoDB mas gostaria de entender melhor como ele funciona na AWS. Alguém pode me explicar?"
+  },
+  "data_criacao": {
+    "S": "2021-05-16"
+  },
+  "situacao": {
+    "S": "NAO_RESPONDIDO"
+  },
+  "autor": {
+    "M": {
+      "id_aluno": {
+        "S": "a4f23037-4204-4390-9e00-88f1ff772ae1"
+      },
+      "nome": {
+        "S": "Leonardo Lopes Silva"
+      },
+      "email": {
+        "S": "leo_lopes09@hotmail.com"
+      },
+      "idade": {
+        "N": "24"
+      }
+    }
+  },
+  "disciplina": {
+    "M": {
+      "id_disciplina": {
+        "S": "28ed8e37-f045-47ce-bbff-a172cab51cb5"
+      },
+      "nome": {
+        "S": "DynamoDB - Banco de dados NoSQL serverless da AWS"
+      },
+      "categoria": {
+        "S": "Banco de dados NoSQL"
+      }
+    }
+  },
+  "respostas": {
+    "L": []
+  }
+}
