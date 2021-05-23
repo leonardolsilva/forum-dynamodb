@@ -18,7 +18,7 @@ public class ControllerAdvice {
     @ResponseBody
     public ResponseEntity<ErrorMessage> resourceNotFoundException(TopicoNaoEncontradoException ex) {
         ErrorMessage error = new ErrorMessage(ex.getMessage(), 404);
-        return new ResponseEntity<ErrorMessage>(error, HttpStatus.NOT_FOUND);
+        return new ResponseEntity<>(error, HttpStatus.NOT_FOUND);
     }
 
     @ExceptionHandler(RespostaSolucionadoraNaoEncontradaException.class)

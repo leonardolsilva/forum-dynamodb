@@ -34,7 +34,7 @@ public class TopicoPortAdapter implements TopicoPort {
         Key key = Key
                 .builder()
                 .partitionValue(idTopico)
-                .sortValue("NAO_RESPONDIDO")
+                .sortValue("SOLUCIONADO")
                 .build();
 
         try {

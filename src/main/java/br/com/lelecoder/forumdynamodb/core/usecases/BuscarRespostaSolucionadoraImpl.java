@@ -23,10 +23,8 @@ public class BuscarRespostaSolucionadoraImpl implements BuscarRespostaSolucionad
         Optional<Topico> optionalTopico = topicoPort.buscar(idTopico);
 
         if (!optionalTopico.isPresent()) {
-            throw new TopicoNaoEncontradoException("Não foi encontrado o tópico " +idTopico);
+            throw new TopicoNaoEncontradoException("Não foi encontrado o tópico " + idTopico);
         }
-
-        Optional<Resposta> optionalResposta = optionalTopico.flatMap(Topico::getRespostaSolucionadora);
 
         return optionalTopico
                 .flatMap(Topico::getRespostaSolucionadora)

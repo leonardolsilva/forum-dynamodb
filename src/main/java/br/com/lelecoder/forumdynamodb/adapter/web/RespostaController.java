@@ -23,9 +23,11 @@ public class RespostaController {
             @RequestParam("id_topico") String idTopico
     ) {
 
-        Resposta optionalResposta = buscarRespostaSolucionadora.encontrar(idTopico);
+        Resposta resposta = buscarRespostaSolucionadora.encontrar(idTopico);
 
-        return new ResponseEntity<>(null, HttpStatus.OK);
+        RespostaDTO respostaDTO = RespostaDTO.construirDTO(resposta);
+
+        return new ResponseEntity<>(respostaDTO, HttpStatus.OK);
 
     }
 }

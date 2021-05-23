@@ -12,11 +12,7 @@ public class Resposta {
     private final String texto;
     private final LocalDateTime dataCriacao;
     private final Aluno aluno;
-    private boolean solucao;
-
-    public void marcarRespostaSolucionada() {
-        this.solucao = true;
-    }
+    private final boolean solucao;
 
     public boolean isSolucao() {
         return solucao;

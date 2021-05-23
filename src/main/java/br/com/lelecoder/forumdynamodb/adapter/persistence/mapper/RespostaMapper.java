@@ -28,21 +28,26 @@ public class RespostaMapper {
     }
 
     private Resposta paraDominio(RespostaModel model) {
+
         return new Resposta(
                 model.getIdentificadorResposta(),
                 model.getTexto(),
                 LocalDateTime.parse(model.getDataCriacao()),
-                mapperAluno.paraDominio(model.getAluno())
+                mapperAluno.paraDominio(model.getAluno()),
+                model.getSolucao()
         );
     }
 
     private RespostaModel paraModel(Resposta resposta) {
+
         return RespostaModel
                 .builder()
                 .identificadorResposta(resposta.getIdentificadorResposta())
                 .texto(resposta.getTexto())
                 .dataCriacao(resposta.getDataCriacao().toString())
                 .aluno(mapperAluno.paraModel(resposta.getAluno()))
+                .solucao(resposta.isSolucao())
                 .build();
     }
+
 }

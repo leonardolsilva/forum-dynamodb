@@ -1,0 +1,114 @@
+{
+  "id_topico": {
+    "S": "f7be8448-c71c-4718-b51b-face07812673"
+  },
+  "titulo": {
+    "S": "Tipos de dados no DynamoDB"
+  },
+  "mensagem": {
+    "S": "Estou com algumas dúvidas relacionadas aos tipos de dados que DynamoDB consegue trabalhar. Onde posso conseguir essa informação?"
+  },
+  "data_criacao": {
+    "S": "2018-05-20T10:47:33"
+  },
+  "situacao": {
+    "S": "SOLUCIONADO"
+  },
+  "autor": {
+    "M": {
+      "id_aluno": {
+        "S": "07840586-9d47-4590-ba27-0bfa9eedc07f"
+      },
+      "nome": {
+        "S": "Lucas Ferreira dos Santos"
+      },
+      "email": {
+        "S": "lucas_santos@hotmail.com"
+      },
+      "idade": {
+        "N": "22"
+      }
+    }
+  },
+  "disciplina": {
+    "M": {
+      "id_disciplina": {
+        "S": "28ed8e37-f045-47ce-bbff-a172cab51cb5"
+      },
+      "nome": {
+        "S": "DynamoDB - Banco de dados NoSQL serverless da AWS"
+      },
+      "categoria": {
+        "S": "Banco de dados NoSQL"
+      }
+    }
+  },
+  "respostas": {
+    "L": [
+      {
+        "M": {
+          "id_resposta": {
+            "S": "f00041b7-611b-4ed0-ac7e-de5895cbbe2b"
+          },
+          "texto": {
+            "S": "O DynamoDB pode encontrar trabalhar com alguns tipos de dados... Number, String, Boolean, Maps e Listas. Para entender melhor como funciona cada um, recomendo olhar a documentação."
+          },
+          "data_criacao": {
+            "S": "2018-05-23T17:45:55"
+          },
+          "aluno": {
+            "M": {
+              "id_aluno": {
+                "S": "05fc8991-0c1f-4a69-92b0-432fc22500a5"
+              },
+              "nome": {
+                "S": "João Guilherme Braga"
+              },
+              "email": {
+                "S": "jgbraga@yahoo.com.br"
+              },
+              "idade": {
+                "N": "30"
+              }
+            }
+          },
+          "solucao": {
+            "BOOL": true
+          }
+        }
+      },
+      {
+        "M": {
+          "id_resposta": {
+            "S": "0ab5466d-589f-49e9-9ad1-719b48cb3480"
+          },
+          "texto": {
+            "S": "A documentação da AWS é bem completa nesse sentido. Neste link -> https://docs.aws.amazon.com/pt_br/amazondynamodb/latest/developerguide/DynamoDBMapper.DataTypes.html você consegue encontrar essas informações."
+          },
+          "data_criacao": {
+            "S": "2018-05-23T17:45:55"
+          },
+          "aluno": {
+            "M": {
+              "id_aluno": {
+                "S": "a1bc42a1-16d2-4153-9b72-262cced52a25"
+              },
+              "nome": {
+                "S": "Fernando Lima Pereira"
+              },
+              "email": {
+                "S": "fernando-lima@msn.com.br"
+              },
+              "idade": {
+                "N": "34"
+              }
+            }
+          },
+          "solucao": {
+            "BOOL": false
+          }
+        }
+      }
+    ]
+  }
+}
